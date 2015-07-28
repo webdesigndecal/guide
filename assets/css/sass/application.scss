@@ -1,0 +1,52 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/grid";
+@import "partials/layout";
+
+.nav-container {
+  position: fixed;
+  width: 100%;
+  .nav-item {
+    display: inline-block;
+  }
+  &.hide {
+    display: none;
+  }
+}
+
+.nav-top {
+  padding: 15px 0;
+  width: 100%;
+  .home-link {
+    float: left;
+  }
+  .portal-link {
+    float: right;
+  }
+  .search {
+    left: 50%;
+    position: absolute;
+    @include transform(translateX(-50%));
+  }
+}
+
+.home {
+  color: $gray-84;
+}
+
+.week-container {
+  border: 1px solid $gray-24;
+  border-radius: 2px;
+  margin: 15px auto;
+  max-width: 600px;
+  padding: 15px;
+  .title {
+
+  }
+}

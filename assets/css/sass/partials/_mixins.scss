@@ -1,0 +1,20 @@
+@mixin prefixer($property, $value, $prefixes) {
+  @each $prefix in $prefixes {
+    @if $prefix == webkit {
+      -webkit-#{$property}: $value;
+    }
+    @else if $prefix == moz {
+      -moz-#{$property}: $value;
+    }
+    @else if $prefix == ms {
+      -ms-#{$property}: $value;
+    }
+    @else if $prefix == spec {
+      #{$property}: $value;
+    }
+  }
+}
+
+@mixin transform($property: none) {
+  @include prefixer(transform, $property, webkit moz ms o spec);
+}

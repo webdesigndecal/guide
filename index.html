@@ -1,9 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html data-ng-app="app">
   <head>
+    <base href="/">
+    <title>WDD Guide</title>
+    <link rel="stylesheet" href="assets/css/stylesheets/application.css">
 
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+    <div data-ng-controller="NavController">
+      <nav data-ng-class="{hide : hideNavBar('/')}" class="nav-container">
+        <div class="container">
+          <div class="nav-top">
+            <h1 class="nav-item home-link"><a ui-sref="home">WDD Guide</a></h1>
+            <div class="nav-item search">
+              <input type="text">
+            </div>
+            <a target="_blank" class="nav-item portal-link" href="http://wdd.io">Go to Portal</a>
+          </div>
+          <div class="nav-breadcrumb">
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div ui-view></div>
+    <!-- Application script -->
+    <script src="assets/js/vendor/angular.min.js"></script>
+    <script src="assets/js/vendor/angular-ui-router.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
 
+    <!-- Main Application Script -->
+    <script src="assets/js/application.js"></script>
+
+    <!-- Application Routing -->
+    <script src="assets/js/routes.js"></script>
+
+    <!-- Controllers -->
+    <script src="assets/js/controllers.js"></script>
+
+
+    <!-- Script for livereload -->
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
   </body>
 </html>
