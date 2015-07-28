@@ -7,7 +7,7 @@ var allLectures = [
   {
     week: 2,
     title: 'HTML Basics II',
-    description: 'Advanced HTML tags, including lists, inputs, and divs. Intro to IDs and classes, and a peak at CSS.'
+    description: 'Advanced HTML tags, including lists, inputs, and divs. Intro to IDs and classes, and a peek at CSS.'
   },
   {
     week: 3,

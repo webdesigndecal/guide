@@ -1,10 +1,14 @@
 // Import Fonts
 
-// Sans-Serif (Roboto Slab)
+// Sans-Serif
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700,300,900);
 
 // Serif (Roboto)
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+// Monospace
+@import url(http://fonts.googleapis.com/css?family=Inconsolata);
 
 * {
   box-sizing: border-box;
@@ -14,7 +18,62 @@ html, body {
   font-family: Roboto, sans-serif;
 }
 
+a {
+  color: $blue;
+  text-decoration: none;
+}
+
+pre {
+  background: $gray-06;
+  border: $gray-12;
+  font-family: $monospace;
+  padding: 10px 0;
+}
+
+code {
+  font-family: $monospace;
+}
+
+xmp {
+  font-family: inherit;
+  margin: 0;
+  white-space: auto;
+}
+
 .container {
   margin: 0 auto;
   max-width: 991px;
+}
+
+.content {
+  h2 {
+    font-family: $sans-serif;
+    font-size: $f-size-xxl;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+
+  h3 {
+    font-family: $serif;
+    font-size: $f-size-lg;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+
+  h4 {
+    color: $gray-84;
+    font-family: $sans-serif;
+    font-size: $f-size-xl;
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-family: $serif;
+    font-size: $f-size-lg;
+    font-weight: 300;
+    line-height: 32px;
+    margin-bottom: 30px;
+  }
 }
