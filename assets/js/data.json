@@ -1,0 +1,59 @@
+var allLectures = [
+  {
+    week: 1,
+    title: 'HTML Basics',
+    description: 'Learn the basic HTML tags, absolute and relative paths, and get familiar with the almighty web inspector.'
+  },
+  {
+    week: 2,
+    title: 'HTML Basics II',
+    description: 'Advanced HTML tags, including lists, inputs, and divs. Intro to IDs and classes, and a peak at CSS.'
+  },
+  {
+    week: 3,
+    title: 'CSS Box Model',
+    description: 'Diving into CSS! A look at the layout of pages and margin, border, and padding. Also talking about fancy CSS selectors.'
+  },
+  {
+    week: 4,
+    title: 'More CSS',
+    description: 'Today\'s a hodgepodge, folks. We\'re briefly reviewing selectors, before seeing best practices for centering, fonts, and images.'
+  },
+  {
+    week: 5,
+    title: 'CSS Positioning',
+    description: 'This one\'s a toughie. Learn how to position HTML blocks using CSS, and what it means to "float" an element.'
+  },
+  {
+    week: 6,
+    title: 'HTML5 & CSS3 Goodies',
+    description: 'Learning how to do the last cool things that HTML5 and CSS3 afford us, before going into JavaScript/jQuery!'
+  },
+  {
+    week: 8,
+    title: 'Introduction to Javascript',
+    description: 'Here we dive into JavaScript, taking a grand overview of its features and seeing briefly how they can be used to manipulate the DOM.'
+  },
+  {
+    week: 9,
+    title: 'Introduction to jQuery',
+    description: 'We\'re looking at the jQuery syntax today! Going to see how easy it is to inject CSS into your HTML on the fly.'
+  },
+  {
+    week: 10,
+    title: 'More jQuery',
+    description: 'We learn everything from the power of "this" to the importance of DOM traversal and how we can set up fancy animations to happen when we scroll. This one\'s a long one.'
+  },
+  {
+    week: 11,
+    title: 'Deploying to Server & Plugins',
+    description: 'Last lecture :( We\'re just talking about jQuery plugins and how to deploy your website to the World Wide Web. Thanks for sticking with us this whole time folks, it\'s been a wild ride.'
+  },
+
+
+
+
+
+
+
+]

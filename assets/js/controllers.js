@@ -3,3 +3,7 @@ app.controller('NavController', ['$scope', '$location', function ($scope, $locat
     return currentLocation === $location.path();
   };
 }]);
+
+app.controller('HomeController', ['$scope', function ($scope) {
+  this.lectures = allLectures;
+}])

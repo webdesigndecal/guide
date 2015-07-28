@@ -1,58 +1,13 @@
-<div class="home">
+<div class="home" data-ng-controller="HomeController as home">
   <div class="container">
     <div class="jumbotron">
       <h1>WDD Guide to Web Design and Development</h1>
     </div>
     <div class="content">
-      <div class="week-container 1">
-        <h1 class="title">HTML Basics</h1>
-        <h2 class="week"></h2>
-        <p class="description"></p>
-      </div>
-      <div class="week-container 2">
-        <h1 class="title">HTML Basics II</h1>
-        <h2 class="week"></h2>
-        <p class="description"></p>
-      </div>
-      <div class="week-container 3">
-        <h1 class="title">CSS Box Model</h1>
-        <h2 class="week"></h2>
-        <p class="description"></p>
-      </div>
-      <div class="week-container 4">
-        <h1 class="title">Moar CSS</h1>
-        <h2 class="week"></h2>
-        <p class="description"></p>
-      </div>
-      <div class="week-container 5">
-        <h1 class="title">CSS Positioning</h1>
-        <h2 class="week"></h2>
-        <p class="description"></p>
-      </div>
-      <div class="week-container 6">
-        <h1 class="title">HTML5 & CSS3 Goodies</h1>
-        <h2 class="week"></h2>
-        <p class="description"></p>
-      </div>
-      <div class="week-container 8">
-        <h1 class="title">Introduction to Javascript</h1>
-        <h2 class="week"></h2>
-        <p class="description"></p>
-      </div>
-      <div class="week-container 9">
-        <h1 class="title">Introduction to jQuery</h1>
-        <h2 class="week"></h2>
-        <p class="description"></p>
-      </div>
-      <div class="week-container 10">
-        <h1 class="title">More jQuery</h1>
-        <h2 class="week"></h2>
-        <p class="description"></p>
-      </div>
-      <div class="week-container 11">
-        <h1 class="title">Deploying to Server & Plugins</h1>
-        <h2 class="week"></h2>
-        <p class="description"></p>
+      <div data-ng-repeat="lecture in home.lectures" ui-sref="{{lecture.week}}" class="week-container">
+        <div data-ng-bind="'Week ' + lecture.week" class="week"></div>
+        <h1 data-ng-bind="lecture.title" class="title"></h1>
+        <p data-ng-bind="lecture.description" class="description"></p>
       </div>
     </div>
   </div>

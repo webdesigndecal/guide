@@ -43,10 +43,25 @@
 .week-container {
   border: 1px solid $gray-24;
   border-radius: 2px;
-  margin: 15px auto;
+  cursor: pointer;
+  margin: 20px auto;
   max-width: 600px;
   padding: 15px;
+  &:hover {
+    border-color: $gray-48;
+  }
   .title {
-
+    font-family: Roboto Slab, serif;
+    font-size: $f-size-xl;
+    margin-bottom: 10px;
+  }
+  .week {
+    color: $gray-60;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .description {
+    font-size: $f-size-md;
+    line-height: $f-size-xl;
   }
 }
