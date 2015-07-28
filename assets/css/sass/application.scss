@@ -8,6 +8,7 @@
 @import "partials/mixins";
 @import "partials/grid";
 @import "partials/layout";
+@import "../vendor/nprogress";
 
 .nav-container {
   position: fixed;
@@ -22,6 +23,7 @@
 
 .nav-top {
   padding: 15px 0;
+  text-align: center;
   width: 100%;
   .home-link {
     float: left;
@@ -30,14 +32,24 @@
     float: right;
   }
   .search {
-    left: 50%;
-    position: absolute;
-    @include transform(translateX(-50%));
+    display: inline-block;
   }
 }
 
 .home {
   color: $gray-84;
+  .jumbotron {
+    background: $gray-06;
+    margin-bottom: 60px;
+    min-height: 300px;
+    padding: 40px 0;
+    text-align: center;
+    .title {
+      font-family: Roboto Slab, Arial, sans-serif;
+      font-size: 30px;
+      position: relative;
+    }
+  }
 }
 
 .week-container {
@@ -46,7 +58,7 @@
   cursor: pointer;
   margin: 20px auto;
   max-width: 600px;
-  padding: 15px;
+  padding: 20px;
   &:hover {
     border-color: $gray-48;
   }

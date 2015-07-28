@@ -1,8 +1,10 @@
 <div class="home" data-ng-controller="HomeController as home">
-  <div class="container">
-    <div class="jumbotron">
-      <h1>WDD Guide to Web Design and Development</h1>
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="title">WDD Guide</h1>
     </div>
+  </div>
+  <div class="container">
     <div class="content">
       <div data-ng-repeat="lecture in home.lectures" ui-sref="{{lecture.week}}" class="week-container">
         <div data-ng-bind="'Week ' + lecture.week" class="week"></div>
