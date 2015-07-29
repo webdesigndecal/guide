@@ -22,9 +22,15 @@
 }
 
 .nav-top {
+  background: white;
   padding: 15px 0;
   text-align: center;
   width: 100%;
+  .container {
+    &:after {
+      @include clearAfter;
+    }
+  }
   .home-link {
     float: left;
   }
