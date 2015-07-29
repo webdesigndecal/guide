@@ -24,10 +24,9 @@ a {
 }
 
 pre {
-  background: $gray-03;
-  border: 1px solid $gray-12;
+  background: $gray-04;
+  border: 1px solid $gray-12 !important;
   font-family: $monospace;
-  padding: 10px 0;
   position: relative;
   .copy {
     background: white;
@@ -35,6 +34,7 @@ pre {
     border-bottom: 1px solid $gray-12;
     border-left: 1px solid $gray-12;
     cursor: pointer;
+    font-family: $monospace;
     font-size: $f-size-sm;
     outline: none;
     padding: 10px;
@@ -51,12 +51,6 @@ pre {
 
 code {
   font-family: $monospace;
-}
-
-xmp {
-  font-family: inherit;
-  margin: 0;
-  white-space: auto;
 }
 
 .container {

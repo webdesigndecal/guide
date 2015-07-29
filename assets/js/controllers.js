@@ -18,7 +18,7 @@ app.controller('ArticleController', ['$scope', function ($scope) {
     textField.innerText = text;
     document.body.appendChild(textField);
     textField.select();
-    document.execCommand('copy');
+    document.execCommand('Copy', false, null);
     textField.remove();
   }
 }])

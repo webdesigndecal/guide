@@ -37,12 +37,13 @@ app.run(['$rootScope', '$location', '$window', function ($rootScope, $location, 
     NProgress.set(0.3);
   });
 
-  $rootScope.$on('$stateChangeSuccess', function () {
+  $rootScope.$on('$viewContentLoaded', function () {
     // scroll to top of page
     $('body').scrollTop(0);
-
     // end the progress bar
     NProgress.done();
+
+    Prism.highlightAll();
   });
 
 }])
