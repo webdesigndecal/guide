@@ -19,6 +19,10 @@
   @include prefixer(transform, $property, webkit moz ms o spec);
 }
 
+@mixin appearance($property: none) {
+  @include prefixer(appearance, $property, webkit moz ms o spec);
+}
+
 @mixin clearAfter {
   visibility: hidden;
   display: block;

@@ -48,12 +48,5 @@ var allLectures = [
     week: 11,
     title: 'Deploying to Server & Plugins',
     description: 'Last lecture :( We\'re just talking about jQuery plugins and how to deploy your website to the World Wide Web. Thanks for sticking with us this whole time folks, it\'s been a wild ride.'
-  },
-
-
-
-
-
-
-
+  }
 ]

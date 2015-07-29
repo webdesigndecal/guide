@@ -5,7 +5,7 @@
     </div>
   </div>
   <div class="container">
-    <div class="content">
+    <div class="content grid">
       <div data-ng-repeat="lecture in home.lectures" ui-sref="{{lecture.week}}" class="week-container">
         <div data-ng-bind="'Week ' + lecture.week" class="week"></div>
         <h1 data-ng-bind="lecture.title" class="title"></h1>

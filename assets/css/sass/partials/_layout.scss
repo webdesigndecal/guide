@@ -24,10 +24,29 @@ a {
 }
 
 pre {
-  background: $gray-06;
-  border: $gray-12;
+  background: $gray-03;
+  border: 1px solid $gray-12;
   font-family: $monospace;
   padding: 10px 0;
+  position: relative;
+  .copy {
+    background: white;
+    border: none;
+    border-bottom: 1px solid $gray-12;
+    border-left: 1px solid $gray-12;
+    cursor: pointer;
+    font-size: $f-size-sm;
+    outline: none;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    @include appearance();
+    &:hover {
+      background: $blue;
+      color: white;
+    }
+  }
 }
 
 code {
@@ -42,10 +61,20 @@ xmp {
 
 .container {
   margin: 0 auto;
-  max-width: 991px;
+  max-width: 900px;
 }
 
+.row {
+  margin-left: 15px;
+  margin-right: 15px;
+  &:after {
+    content: '';
+    clear: both;
+  }
+}
 .content {
+  color: $gray;
+  -webkit-user-select: text;
   h2 {
     font-family: $sans-serif;
     font-size: $f-size-xxl;
@@ -62,11 +91,11 @@ xmp {
   }
 
   h4 {
-    color: $gray-84;
     font-family: $sans-serif;
     font-size: $f-size-xl;
     font-weight: 300;
     margin-bottom: 15px;
+    opacity: 0.84;
   }
 
   p {
@@ -76,4 +105,17 @@ xmp {
     line-height: 32px;
     margin-bottom: 30px;
   }
+
+  .toc {
+    padding-top: 30px;
+    padding-left: 40px;
+  }
+}
+
+.js-bin {
+  border: 1px solid $gray-24;
+  width: 100%;
+  height: 400px;
+  margin: 25px auto;
+  position: relative;
 }

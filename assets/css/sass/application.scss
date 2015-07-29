@@ -60,11 +60,11 @@
   border: 1px solid $gray-24;
   border-radius: 2px;
   cursor: pointer;
-  margin: 20px auto;
+  margin: 30px auto;
   max-width: 600px;
   padding: 20px;
   &:hover {
-    border-color: $gray-48;
+    border-color: $blue;
   }
   .title {
     font-family: Roboto Slab;
@@ -79,11 +79,12 @@
   .description {
     font-size: $f-size-md;
     line-height: $f-size-xl;
+    margin-bottom: 0;
   }
 }
 
 .article {
-  max-width: 700px;
+  max-width: 900px;
   padding-top: 80px;
   padding-bottom: 40px;
   .title-container {
