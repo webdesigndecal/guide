@@ -11,7 +11,6 @@
 @import "../vendor/nprogress";
 
 .nav-container {
-  position: fixed;
   width: 100%;
   .nav-item {
     display: inline-block;
@@ -22,7 +21,6 @@
 }
 
 .nav-top {
-  background: white;
   padding: 15px 0;
   text-align: center;
   width: 100%;
@@ -49,28 +47,34 @@
 .home {
   color: $gray-84;
   .jumbotron {
-    background: $gray-06;
-    margin-bottom: 60px;
-    min-height: 300px;
     padding: 40px 0;
     text-align: center;
     .title {
       font-family: Roboto Slab, Arial, sans-serif;
       font-size: 30px;
+      font-weight: 500;
       position: relative;
+    }
+    .subtitle {
+      color: $gray-60;
+      margin-top: 15px;
     }
   }
 }
 
 .week-container {
-  border: 1px solid $gray-24;
   border-radius: 2px;
+  border-bottom: 1px solid $gray-12;
   cursor: pointer;
   margin: 30px auto;
   max-width: 600px;
-  padding: 20px;
+  padding-bottom: 45px;
+  padding-top: 15px;
   &:hover {
-    border-color: $blue;
+    color: $blue;
+  }
+  &:last-of-type {
+    border-bottom: none;
   }
   .title {
     font-family: Roboto Slab;
@@ -91,8 +95,7 @@
 
 .article {
   max-width: 900px;
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding: 40px 70px;
   .title-container {
     margin: 40px auto;
     .title {

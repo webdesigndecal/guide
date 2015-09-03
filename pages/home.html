@@ -1,12 +1,13 @@
 <section class="home" data-ng-controller="HomeController as home">
   <div class="jumbotron">
     <div class="container">
-      <h1 class="title">WDD Guide</h1>
+      <h1 class="title">Web Design Decal</h1>
+      <h2 class="subtitle">Fall 2015</h2>
     </div>
   </div>
   <div class="container">
     <div class="content grid">
-      <div data-ng-repeat="lecture in home.lectures" ui-sref="{{lecture.week}}" class="week-container">
+      <div data-ng-repeat="lecture in home.lectures" data-ng-if="lecture.showOnHome" ui-sref="{{lecture.week}}" class="week-container">
         <div data-ng-bind="'Week ' + lecture.week" class="week"></div>
         <h1 data-ng-bind="lecture.title" class="title"></h1>
         <p data-ng-bind="lecture.description" class="description"></p>

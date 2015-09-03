@@ -2,7 +2,8 @@ var allLectures = [
   {
     week: 1,
     title: 'HTML Basics',
-    description: 'Learn the basic HTML tags, absolute and relative paths, and get familiar with the almighty web inspector.'
+    description: 'Learn the basic HTML tags, absolute and relative paths, and get familiar with the almighty web inspector.',
+    showOnHome: true,
   },
   {
     week: 2,
